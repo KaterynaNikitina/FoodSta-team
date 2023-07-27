@@ -1,0 +1,56 @@
+<!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close-btn" data-modal-close>
+      <svg width="12px" height="12px">
+        <use href="./images/icons.svg#btn-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Order Form</p>
+    <form class="modal__form">
+      <div class="modal__form-field">
+        <label class="modal__form-label" for="name">Name</label>
+        <input
+          type="text"
+          class="modal__form-input"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          autofocus
+          required
+          minlength="3"
+          maxlength="25"
+        />
+      </div>
+      <div class="modal__form-field">
+        <label for="tel" class="modal__form-label">Phone number</label>
+
+        <input
+          type="tel"
+          class="modal__form-input"
+          name="tel"
+          id="tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          pattern="^\+\d{2}\(\d{3}\)\d{3} \d{2} \d{2}$" 
+          minlength="17"
+          maxlength="17"
+
+        />
+      </div>
+      <div class="modal__form-field">
+        <label for="email" class="modal__form-label">E-mail</label>
+
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        class="modal__form-input" 
+        required
+        placeholder="example@gmail.com"/>
+        
+      </div>
+      <button type="submit" class="modal__form-btn">Send</button>
+    </form>
+  </div>
+</div>

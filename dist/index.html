@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSta</title>
+    <link rel="shortcut icon" href="/favicon.c3d66290.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+  <div class="header-page container">
+    <a href="/index.html" lang="en">
+      <img class="logo" src="/logo.cd13699a.svg" alt="company logo" width="66" height="52">
+    </a>
+
+    <button type="button" class="button__menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="button__menu-svg" aria-label="Open mobile menu" width="28" height="28">
+        <use class="button-menu__icon-menu" href="/icons.adfc4680.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu__cross js-close-menu">
+        <svg class="menu__cross-icon" width="24" height="24">
+          <use href="/icons.adfc4680.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#hero" class="menu__link" id="hero_title">Favorite food</a>
+          </li>
+          <li class="menu__item">
+            <a href="#offerings" class="menu__link" id="offerings_title">Our offerings</a>
+          </li>
+          <li class="menu__item">
+            <a href="#favorites" class="menu__link" id="favorites_title">Favorites</a>
+          </li>
+          <li class="menu__item">
+            <a href="#customers" class="menu__link" id="customers_title">Customers Say</a>
+          </li>
+          <li class="menu__item">
+            <a href="#subscribe" class="menu__link" id="subscribe_title">Subscribe</a>
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link">About us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <button type="button" class="button__order animate__animated animate__pulse animate__infinite animate__slow" data-modal-open="">
+      Order Now
+    </button>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero" id="hero">
+  <div class="container container--hero">
+    <picture>
+      <source srcset="/background-desktop.726de3a6.png    1x, /background-desktop@2x.27f3f70a.png 2x" media="(min-width: 1280px)">
+      <source srcset="/background-tablet.a497784d.png    1x, /background-tablet@2x.30870188.png 2x" media="(min-width: 768px)">
+
+      <source srcset="/background-mob.9779cdb5.png    1x, /background-mob@2x.3c721450.png 2x" media="(min-width: 480px)">
+
+      <source srcset="/background-mob.9779cdb5.png    1x, /background-mob@2x.3c721450.png 2x" media="(max-width: 479px)">
+
+      <img src="/background-desktop.726de3a6.png" alt="hero-background" class="hero__background">
+    </picture>
+    <h1 class="hero__title animate__animated animate__backInLeft animate__slow">
+      Enjoy Your Favorite Food From Anywhere
+    </h1>
+    <p class="hero__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <button type="button" class="button__order button__order--hero animate__animated animate__pulse animate__infinite" data-modal-open="">
+      Order Now
+    </button>
+
+    <div class="dishes">
+      <div class="dishes__wrapper">
+        <div class="dishes__slider">
+          <picture class="dishes__img">
+            <source srcset="/dish1-desktop.57d0227c.png    1x, /dish1-desktop@2x.dedda2d0.png 2x" media="(min-width: 1280px)">
+
+            <source srcset="/dish1-tablet.42d4d1e7.png    1x, /dish1-tablet@2x.5b3912af.png 2x" media="(min-width: 768px)">
+
+            <img src="/dish1-tablet.42d4d1e7.png" alt="Dish № 1">
+          </picture>
+          <picture class="dishes__img">
+            <source srcset="/dish2-desktop.243c4423.png    1x, /dish2-desktop@2x.80202510.png 2x" media="(min-width: 1280px)">
+            <source srcset="/dish2-tablet.1a8de377.png    1x, /dish2-tablet@2x.ed7abb98.png 2x" media="(min-width: 768px)">
+
+            <img src="/dish2-tablet.1a8de377.png" alt="Dish № 2">
+          </picture>
+          <picture class="dishes__img">
+            <source srcset="/dish3-desktop.3a2bdc76.png    1x, /dish3-desktop@2x.f433ef1a.png 2x" media="(min-width: 1280px)">
+
+            <source srcset="/dish3-tablet.0679c784.png    1x, /dish3-tablet@2x.eafd30cc.png 2x" media="(min-width: 768px)">
+
+            <img src="/dish3-tablet.0679c784.png" alt="Dish № 3">
+          </picture>
+        </div>
+        <button type="button" class="dishes__button dishes__button--prev" id="btn-prev">
+          <svg class="dishes__arrow">
+            <use href="/icons.adfc4680.svg#icon-left-arrow"></use>
+          </svg>
+        </button>
+        <button type="button" class="dishes__button dishes__button--next" id="btn-next">
+          <svg class="dishes__arrow">
+            <use href="/icons.adfc4680.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="offerings-container" id="offerings">
+        <picture>
+             <source srcset="/apple-mob280x309.90f4ccfd.png 1x, /apple-mob280x309@2x.6d9206cc.png 2x" type="image/png" media="(max-width: 767px)">
+                <source srcset="/apple-tab704x394.8b19063b.png 1x, /apple-tab704x394@2x.bf09f3f6.png 2x" type="image/png" media="(max-width: 1279px)">
+                <source srcset="/apple-desk550x604.c4e95bb4.png 1x, /apple-desk550x604@2x.21f2dbc2.png 2x" type="image/png" media="(min-width: 1280px)">
+        <img class="offerings-pic" src="/apple-mob280x309.90f4ccfd.png" alt="Green apple">
+        </picture>
+        <div class="offerings">
+            <div class="offerings__description">
+                <h2 class="offerings__header">What’s Special About Our Offerings</h2>
+                <p class="offerings__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            </div>
+            <ul class="features">
+              <li class="features__item">
+                <h3 class="features__item-delivery">Fastest Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__item-order">Easy to order</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+            </ul>
+            <div class="actions">
+              <button class="actions__button  animate__animated animate__pulse animate__infinite animate__slow" type="button" data-modal-open="">Order Now</button>
+              <a class="actions__link" href="#">Read More</a>
+            </div>
+        </div>
+
+    </section>
+      <section class="favorites-section" id="favorites">
+  <div class="container">
+    <h2 class="favorites__title">Some of Our Favorites</h2>
+    <p class="favorites__description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <ul class="favorites-list">
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/gamburger.2fcca39d.jpg    1x, /gamburger@2x.11e4e6dc.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/gamburger.19060276.jpg    1x, /gamburger@2x.24560ba1.jpg 2x">
+          <img class="favorites-list__photo" src="/gamburger.2fcca39d.jpg" alt="gamburger">
+        </picture>
+      </li>
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/pasta.96e5e4b6.jpg    1x, /pasta@2x.4d44f6f7.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/pasta.b40d1028.jpg    1x, /pasta@2x.613f4a72.jpg 2x">
+          <img class="favorites-list__photo" src="/pasta.96e5e4b6.jpg" alt="pasta">
+        </picture>
+      </li>
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/pizza.e398eb44.jpg    1x, /pizza@2x.d8667aad.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/pizza.2bd9ab09.jpg    1x, /pizza@2x.7cf1c876.jpg 2x">
+          <img class="favorites-list__photo" src="/pizza.e398eb44.jpg" alt="pizza">
+        </picture>
+      </li>
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/chicken.f7236a0e.jpg    1x, /chicken@2x.0c5ad080.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/chicken.7ac79861.jpg    1x, /chicken@2x.271937c5.jpg 2x">
+          <img class="favorites-list__photo" src="/chicken.f7236a0e.jpg" alt="chicken with rice">
+        </picture>
+      </li>
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/salat.6e3315ec.jpg    1x, /salat@2x.3fa28127.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/salat.dd263622.jpg    1x, /salat@2x.3bb2da8b.jpg 2x">
+          <img class="favorites-list__photo" src="/salat.6e3315ec.jpg" alt="salat">
+        </picture>
+      </li>
+      <li class="favorites-list__item">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="/borshch.d59872c0.jpg    1x, /borshch@2x.d9b52384.jpg 2x">
+          <source media="(min-width: 1280px)" srcset="/borshch.794975a6.jpg    1x, /borshch@2x.20295197.jpg 2x">
+          <img class="favorites-list__photo" src="/borshch.d59872c0.jpg" alt="borshch">
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="customers" id="customers">
+  <div class="container">
+    <h2 class="customers__title">What our Customers Say</h2>
+    <p class="customers__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="customers__list">
+      <li class="customers__item">
+        <ul class="stars__list">
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <p class="pre-text">
+          “The Best app I have used to order food in a while, so many options to
+          choose from too, I would recommend to a freind, No questions asked”
+        </p>
+        <div class="customer-box">
+          <picture>
+            <source media="(max-width:767px)" srcset="/castomer1.01524870.jpg, /castomer1@2x.057ac9ab.jpg 2x">
+            <source media="(min-width:768px) and (max-width:1279px)" srcset="/castomer1.01524870.jpg, /castomer1@2x.057ac9ab.jpg 2x">
+            <source media="(min-width:1280px)" srcset="/castomer1.01524870.jpg, /castomer1@2x.057ac9ab.jpg 2x">
+            <img class="icon" src="/castomer1.01524870.jpg" alt="man">
+          </picture>
+          <div class="thumb">
+            <h3 class="pre-title">Sumith Shah</h3>
+            <p class="description">Some Dude</p>
+          </div>
+        </div>
+      </li>
+      <li class="customers__item">
+        <ul class="stars__list">
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="stars__item">
+            <svg class="icon-star" width="17" height="16">
+              <use href="/icons.adfc4680.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="pre-text">
+          “The ease with which I can just go in and order what i want was
+          amazing, It has been a very pleasant experience ordering from this
+          app”
+        </p>
+        <div class="customer-box">
+          <picture>
+            <source media="(max-width:767px)" srcset="/castomer2.193075b4.jpg, /castomer2@2x.8e9bed77.jpg 2x">
+            <source media="(min-width:768px) and (max-width:1279px)" srcset="/castomer2.193075b4.jpg, /castomer2@2x.8e9bed77.jpg 2x">
+            <source media="(min-width:1280px)" srcset="/castomer2.193075b4.jpg, /castomer2@2x.8e9bed77.jpg 2x">
+            <img class="icon" src="/castomer2.193075b4.jpg" alt="woman">
+          </picture>
+          <div class="thumb">
+            <h3 class="pre-title">Sumith Shah</h3>
+            <p class="description">Some Dude</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="subscribe" id="subscribe">
+    <div class="container subscribe-container">
+      <picture>
+        <source srcset="/background2-mob-480.0cbc2cd0.png 1x, /background2-mob-480@2x.1d266f60.png 2x" media="(min-width:480px)">
+        <img src="/background2-mob-480.0cbc2cd0.png" alt="Банан" class="subscribe__image-background">
+      </picture>
+      <picture>
+        <source srcset="/banan-des.bb996c13.png 1x, /banan-des@2x.bcc048d6.png 2x" media="(min-width:1280px)">
+        <source srcset="/banan-tab.eda06ac8.png 1x, /banan-tab@2x.80c4e128.png 2x" media="(min-width:768px)">
+        <source srcset="/banan-mob.c5c8148f.png 1x, /banan-mob@2x.1c0b5002.png 2x" media="(max-width:767px)">
+        <img src="/banan-des.bb996c13.png" alt="Банан" class="subscribe__image-banan animate__animated animate__bounce animate__infinite animate__slower">
+      </picture>
+      <form class="subscribe-form">
+        <h2 class="subscribe-form__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe-form__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+
+        <label class="subscribe-form__label">
+          <input type="email" name="email" class="subscribe-form__input" placeholder="Enter your email" required="">
+        </label>
+
+        <button type="submit" class="subscribe-form__btn  animate__animated animate__pulse animate__infinite animate__slow">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+      <!-- Modal -->
+<div class="backdrop is-hidden" data-modal="">
+  <div class="modal">
+    <button class="modal__close-btn" data-modal-close="">
+      <svg width="12px" height="12px">
+        <use href="/icons.adfc4680.svg#btn-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Order Form</p>
+    <form class="modal__form">
+      <div class="modal__form-field">
+        <label class="modal__form-label" for="name">Name</label>
+        <input type="text" class="modal__form-input" name="name" id="name" placeholder="Your name" autofocus="" required="" minlength="3" maxlength="25">
+      </div>
+      <div class="modal__form-field">
+        <label for="tel" class="modal__form-label">Phone number</label>
+
+        <input type="tel" class="modal__form-input" name="tel" id="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" required="" pattern="^\+\d{2}\(\d{3}\)\d{3} \d{2} \d{2}$" minlength="17" maxlength="17">
+      </div>
+      <div class="modal__form-field">
+        <label for="email" class="modal__form-label">E-mail</label>
+
+        <input type="email" name="email" id="email" class="modal__form-input" required="" placeholder="example@gmail.com">
+        
+      </div>
+      <button type="submit" class="modal__form-btn">Send</button>
+    </form>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+  <div class="container footer__wrapper">
+    <div class="footer-link__wraper">
+      <a class="footer__logo-link" href="/index.html">
+        <img src="/logo.cd13699a.svg" alt="logo" width="69">
+      </a>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#hero">Favorite food</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#offerings">Our offerings</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#favorites">Favorites </a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#customers">Customers Say</a> 
+          </li> 
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#subscribe">Subscribe</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#footer">About us</a> 
+          </li>
+        </ul>
+      </nav>
+    </div>
+      
+      <div class="footer-form__container">
+        <form class="footer-form">
+          <p class="footer-form__text">
+            Subscribe
+          </p>
+          <div class="footer-form__wrap">
+            <label for="mail"></label>
+              <input name="mail" id="mail" type="email" placeholder="Enter your email">
+              <button type="submit" class="footer-form__btn  animate__animated animate__pulse animate__infinite animate__slow">Subscribe</button> 
+          </div>
+        </form>
+      </div>
+      <p class="footer__agree">
+        By subscribing you agree to with our
+        <a class="footer__privacy-policy" href=""> Privacy Policy</a>
+      </p>
+
+    <div class="footer-info">
+      <ul class="footer-info__list">
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Privacy Policy
+        </a> 
+        </li>
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Terms of Service
+        </a> 
+        </li>
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Cookies Settings
+        </a> 
+        </li>
+      </ul>
+      <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- scripts -->
+    <script src="/index.707f265c.js"></script>
+    <script src="/index.a8c537e0.js"></script>
+    <script src="/index.25139ead.js"></script>
+    <script src="/index.ba4f3a9f.js"></script>
+    <script src="/index.7cbd9271.js"></script>
+    <script src="/index.b7b23b5e.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer="" src="/index.579125c3.js"></script>
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </body>
+</html>
